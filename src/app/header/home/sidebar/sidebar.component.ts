@@ -4,14 +4,11 @@ import { SubscribeService } from 'src/app/services/subscribe.service';
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
-  providers:[SubscribeService]
+  // providers:[SubscribeService]
 })
 export class SidebarComponent {
 
-  subService: SubscribeService;
-
-  constructor(subService:SubscribeService){
-    this.subService=subService;
+  constructor( private subService:SubscribeService){
   }
 
   onSubscribe(){

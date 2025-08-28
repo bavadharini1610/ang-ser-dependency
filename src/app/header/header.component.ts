@@ -4,15 +4,12 @@ import { SubscribeService } from '../services/subscribe.service';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  providers:[SubscribeService]
+  //providers:[SubscribeService]
 })
 export class HeaderComponent {
   selectedTab: string = 'home';
 
-  subService: SubscribeService;
-
-  constructor(subService:SubscribeService){
-    this.subService=subService;
+  constructor(private subService:SubscribeService){
   }
 
   //When HOME Link is clicked
