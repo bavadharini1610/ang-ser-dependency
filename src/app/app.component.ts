@@ -5,7 +5,7 @@ import { SubscribeService } from './services/subscribe.service';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers:[SubscribeService]
+  //providers:[SubscribeService]
 })
 export class AppComponent {
   title = 'angular-services-dependency-injection';
