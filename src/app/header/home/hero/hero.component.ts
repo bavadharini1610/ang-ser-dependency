@@ -8,8 +8,10 @@ import { SubscribeService } from 'src/app/services/subscribe.service';
 })
 export class HeroComponent {
 
-  constructor(private subService:SubscribeService){
-  }
+  // constructor(private subService:SubscribeService){
+  // }
+
+  subService=inject(SubscribeService);
   onSubscribe(){
     this.subService.onSubscribeClicked('yearly');
   }
